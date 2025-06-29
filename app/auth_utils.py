@@ -39,3 +39,4 @@ def decode_access_token(token: str):
     JWTトークンをデコードし、中身を返す
     """
     return jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+
